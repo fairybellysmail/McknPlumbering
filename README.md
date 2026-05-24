@@ -18,6 +18,15 @@ View your app in AI Studio: https://ai.studio/apps/6fc77077-4fde-4515-bbbb-304a0
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## GitHub Pages deployment
+
+This repository is configured to deploy the built `dist/` output automatically to GitHub Pages on every push to `main`.
+
+1. Push your changes to `main`.
+2. GitHub Actions will build the app and publish `dist/` to GitHub Pages.
+3. Enable Pages in the repo settings if needed. The site will use the default branch deployment target.
+
 ## cPanel shared hosting deployment
 
 This project builds to static files that can be uploaded to cPanel shared hosting.
